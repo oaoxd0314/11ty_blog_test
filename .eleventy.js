@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addWatchTarget("./src/style")
     eleventyConfig.addPassthroughCopy("./src/style.css")
     eleventyConfig.addPassthroughCopy("./src/assets")
+    eleventyConfig.addPassthroughCopy("./src/admin")
 
     eleventyConfig.addFilter("randomPost",(arr)=>{
         console.log(arr)
