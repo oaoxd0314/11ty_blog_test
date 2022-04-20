@@ -1,0 +1,33 @@
+{
+  "name": "11ty_blog_test",
+  "version": "1.0.0",
+  "description": "These are the starting files used by [Kevin Powell](https://kevinpowell.co) to create a personal blog site for the [Codementor](https://www.codementor.io/) DevProjects Challenge, [Create a fast and secure blog using JAMStack](https://www.codementor.io/projects/web/create-a-fast-and-secure-blog-using-jamstack-c93coupnxb). You are free to use them however you want to get started with the challenge, if you'd like to start working on creating the site without worrying about the content itself.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:11ty": "eleventy --serve",
+    "watch:sass": "sass --watch src/style:public/css",
+    "build:sass": "sass src/style:public/css",
+    "build:11ty": "eleventy",
+    "start-1": "npm-run-all build:sass --parallel watch:*",
+    "build-1": "npm-run-all build:*",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oaoxd0314/11ty_blog_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oaoxd0314/11ty_blog_test/issues"
+  },
+  "homepage": "https://github.com/oaoxd0314/11ty_blog_test#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.50.1"
+  }
+}
